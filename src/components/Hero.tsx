@@ -81,7 +81,7 @@ const Hero = () => {
   <img 
     src="/hero.png" 
     alt="Floating Illustration" 
-    className="w-3/4 max-w-xs animate-floating"
+    className="w-7/5 max-w-x animate-floating"
   />
 </div>
 
