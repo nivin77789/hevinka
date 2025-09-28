@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Left Section */}
-          <div className="lg:w-1/3 animate-fade-in-left">
+          <div className="lg:w-1/2 animate-fade-in-left">
             <div className="inline-flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-1.5 mb-6">
               <span className="text-xs font-medium text-crypto-purple mr-2">What’s New</span>
               <span className="text-xs text-gray-300">Custom Software & Web Solutions</span>
@@ -57,14 +57,34 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Section with Spline */}
-          {/* Right Section with Spline */}
-<div className="lg:w-2/3 mt-12 lg:mt-0 animate-fade-in-right">
+          {/* Right Section */}
+<div className="lg:w-1/2 mt-12 lg:mt-0 animate-fade-in-right">
   <div className="relative h-[70vh] flex justify-end">
-    <Spline
-      scene="https://prod.spline.design/IXvAdzaWii7fct6A/scene.splinecode" 
-      style={{ width: "100%", height: "100%" }}
-    />
+    {/* Show Spline only on medium+ screens */}
+    <div className="hidden sm:block w-full h-full relative">
+      <Spline
+        scene="https://prod.spline.design/zEiCeYCDS49OEOcj/scene.splinecode" 
+        style={{ width: "100%", height: "100%" }}
+      />
+
+      {/* Overlay small div to hide the "Built with Spline" text */}
+      {/* Overlay small div to hide the "Built with Spline" text */}
+<div className="absolute bottom-2 right-2 bg-gradient-hero w-36 h-10 rounded-lg flex items-center justify-center">
+  <span className="text-sm text-gray-400">Hevinka Private Ltd</span>
+</div>
+
+    </div>
+
+    {/* Show floating image only on mobile */}
+    {/* Show floating image only on mobile */}
+<div className="block sm:hidden flex justify-center items-center w-full h-full">
+  <img 
+    src="/hero.png" 
+    alt="Floating Illustration" 
+    className="w-3/4 max-w-xs animate-floating"
+  />
+</div>
+
   </div>
 </div>
 
