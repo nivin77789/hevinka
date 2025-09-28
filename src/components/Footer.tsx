@@ -77,7 +77,7 @@ const Footer = () => {
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               &copy; {currentYear} Hevinka. All rights reserved. Designed by 
 
-              nivin Mathew S
+              Nivin Mathew
             </p>
             <div className="flex space-x-6">
               <a href="#!" className="text-gray-400 hover:text-crypto-purple text-sm transition-colors">Terms of Service</a>
